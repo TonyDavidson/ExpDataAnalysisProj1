@@ -29,6 +29,7 @@ with(data, {
     lines(Sub_metering_2~Datetime,col='Red')
     lines(Sub_metering_3~Datetime,col='Blue')
 })
+## tidy up headers so that alignment works on png file, ie no cut off of headers
 legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2, cex=0.95, 
        legend=c("Sub_metering_1                         ", "Sub_metering_2                         ", "Sub_metering_3                         "))
 
